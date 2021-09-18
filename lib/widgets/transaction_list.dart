@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:person_expenses/models/transaction.dart';
@@ -17,7 +15,6 @@ class _TransactionListState extends State<TransactionList> {
   @override
   void initState() {
     print("initState()");
-    // TODO: implement initState
     super.initState();
   }
 
