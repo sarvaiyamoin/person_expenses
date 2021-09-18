@@ -15,14 +15,14 @@ void main() {
   runApp(MaterialApp(
     title: "Person Expenses",
     theme: ThemeData(
-      primarySwatch: Colors.green,
-      accentColor: Colors.amber,
       fontFamily: 'NotoSansJP',
       textTheme: ThemeData.light().textTheme.copyWith(
           headline1: TextStyle(
               fontFamily: 'Quicksand',
               fontSize: 18,
               fontWeight: FontWeight.bold)),
+      colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.green)
+          .copyWith(secondary: Colors.amber),
     ),
     debugShowCheckedModeBanner: false,
     home: MyHomePage(),
